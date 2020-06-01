@@ -6,7 +6,10 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
     </head>
     <body>
-        <h1>Hello Flask</h1>
-        <p class="paragraph">This is my first flask webserver</p>
+        <h1>Hello, please upload your file below:</h1>
+        <form method=post enctype=multipart/form-data>
+            <input type=file name=file>
+            <input type=submit value=Upload>
+        </form>
     </body>
 </html>
